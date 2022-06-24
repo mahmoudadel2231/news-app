@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/mahmoudadel2231/news-app/compare/v1.2.0...v1.3.0) (2022-06-24)
+
+
+### Features
+
+* **redux:** initalize redux + use api to fetch data ([2725775](https://github.com/mahmoudadel2231/news-app/commit/272577583a95c04d3628fa0648be4823c4ad362f))
+
 ## [1.2.0](https://github.com/mahmoudadel2231/news-app/compare/v1.1.0...v1.2.0) (2022-06-23)
 
 
