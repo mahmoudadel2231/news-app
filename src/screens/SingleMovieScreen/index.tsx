@@ -29,10 +29,10 @@ export const SingleMovieScreen = () => {
           {currentMovie?.title} ({currentMovie?.original_language}) (
           {currentMovie?.vote_average} &#9733;)
         </Text>
-        <Text style={styles.overviewStyle}>{currentMovie?.overview}</Text>
         <Text style={styles.releaseDateStyle}>
           {currentMovie?.release_date}
         </Text>
+        <Text style={styles.overviewStyle}>{currentMovie?.overview}</Text>
       </View>
     </ScrollView>
   );

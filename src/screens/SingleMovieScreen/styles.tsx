@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   releaseDateStyle: {
     color: 'white',
-    marginTop: hp(2),
+    marginTop: hp(1),
   },
 });
 

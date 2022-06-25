@@ -12,9 +12,8 @@ const slice = createSlice({
   }),
   reducers: {},
   extraReducers: builder => {
-    builder.addCase(
-      Movies.thunks.fetchMoviesList.fulfilled,
-      (state, action) => {
+    builder
+      .addCase(Movies.thunks.fetchMoviesList.fulfilled, (state, action) => {
         if (!action.payload.entities.movies) {
           state.currentMovies = [];
           return;
@@ -28,8 +27,22 @@ const slice = createSlice({
             ...action.payload?.result,
           ];
         }
-      },
-    );
+      })
+      .addCase(Movies.thunks.searchMovies.fulfilled, (state, action) => {
+        if (!action.payload.entities.movies) {
+          state.currentMovies = [];
+          return;
+        }
+        adapter.upsertMany(state, action.payload?.entities.movies);
+        if (action.payload.refresh === true) {
+          state.currentMovies = action.payload?.result;
+        } else {
+          state.currentMovies = [
+            ...state.currentMovies,
+            ...action.payload?.result,
+          ];
+        }
+      });
   },
 });
 
