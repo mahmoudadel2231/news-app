@@ -33,7 +33,7 @@
     "web": "expo start --web",
     "release": "standard-version"
   },
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "name": "newsapp"
 }
