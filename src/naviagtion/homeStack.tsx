@@ -1,15 +1,15 @@
-import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "../screens/HomeScreen/index";
+import React from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
+import HomeScreen from '../screens/HomeScreen/index';
+import {SingleMovieScreen} from '../screens';
 
-const Stack = createNativeStackNavigator<any>();
+const Stack = createStackNavigator();
 
-const HomeStack = () => {
-  return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
-  );
-};
+const HomeStack = () => (
+  <Stack.Navigator initialRouteName="Home">
+    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="singleMovie" component={SingleMovieScreen} />
+  </Stack.Navigator>
+);
 
 export default HomeStack;

@@ -1,2 +1,2 @@
-export * from "./HomeScreen";
-export * from "./SingleNewsScreen";
+export * from './HomeScreen';
+export * from './SingleMovieScreen';

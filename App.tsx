@@ -4,6 +4,7 @@ import store from './src/redux/store';
 import {Provider} from 'react-redux';
 // import { PersistGate } from "redux-persist/integration/react";
 import AppContainer from './src/naviagtion';
+import 'react-native-gesture-handler';
 
 export default function App() {
   return (

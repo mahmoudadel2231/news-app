@@ -1,4 +1,3 @@
-import React from 'react';
 import {StyleSheet} from 'react-native';
 import {
   heightPercentageToDP as hp,
@@ -6,24 +5,19 @@ import {
 } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
-  itemContainer: {
-    backgroundColor: 'gray',
-    marginBottom: hp(2),
-    flexDirection: 'row',
-    height: hp(30),
-    borderRadius: 10,
-  },
   textContainer: {
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    width: wp(50),
-    marginLeft: wp(2),
+    width: wp(100),
+    backgroundColor: 'gray',
+    paddingHorizontal: wp(2),
+    paddingTop: hp(1),
+    minHeight: hp(40),
   },
   imageContainer: {
-    height: '100%',
-    width: wp(40),
-    borderRadius: 10,
+    height: hp(60),
+    width: wp(100),
   },
   titleStyle: {
     fontWeight: 'bold',
