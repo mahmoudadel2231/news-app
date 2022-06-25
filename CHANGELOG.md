@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/mahmoudadel2231/news-app/compare/v1.4.0...v1.5.0) (2022-06-25)
+
+
+### Features
+
+* **search:** add search dynamically to the home screen ([236e4c4](https://github.com/mahmoudadel2231/news-app/commit/236e4c4dbcb0d91cedb6d93d04244d9630d9c78b))
+
+
+### Bug Fixes
+
+* design ([1c61978](https://github.com/mahmoudadel2231/news-app/commit/1c61978ec12f46a0e1ff0271543e4487c2574032))
+
 ## [1.4.0](https://github.com/mahmoudadel2231/news-app/compare/v1.3.0...v1.4.0) (2022-06-25)
 
 
