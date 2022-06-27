@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/mahmoudadel2231/news-app/compare/v1.5.1...v1.5.2) (2022-06-27)
+
+
+### Bug Fixes
+
+* translations ([58836b1](https://github.com/mahmoudadel2231/news-app/commit/58836b12caa75034ef5dd00c8ecc38f0e853f85b))
+
 ### [1.5.1](https://github.com/mahmoudadel2231/news-app/compare/v1.5.0...v1.5.1) (2022-06-27)
 
 ## [1.5.0](https://github.com/mahmoudadel2231/news-app/compare/v1.4.0...v1.5.0) (2022-06-25)
