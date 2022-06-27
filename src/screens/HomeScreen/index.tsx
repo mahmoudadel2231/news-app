@@ -27,6 +27,9 @@ const HomeScreen = () => {
   const [query, setQuey] = useState(undefined);
 
   const translate = useKeyTranslation('common');
+  console.log(Appearance.getColorScheme());
+  let colorScheme = useColorScheme();
+  console.log('colorScheme', colorScheme);
 
   useEffect(() => {
     fetchMovies({refresh: true, query, page});

@@ -1,7 +1,8 @@
-import { createEntityAdapter } from "@reduxjs/toolkit";
+import {createEntityAdapter} from '@reduxjs/toolkit';
+import {TMovie} from './model';
 
-const adapter = createEntityAdapter<any>({
-  selectId: (movie) => movie.id,
+const adapter = createEntityAdapter<TMovie>({
+  selectId: movie => movie.id,
 });
 
 export default adapter;

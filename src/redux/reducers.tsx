@@ -1,11 +1,9 @@
-import { combineReducers } from "@reduxjs/toolkit";
+import {combineReducers} from '@reduxjs/toolkit';
 
-import type { AnyAction } from "@reduxjs/toolkit";
+import type {AnyAction} from '@reduxjs/toolkit';
 
-import Movies from "./Movies";
-import loadingSlice from "./_loading";
-
-const REDUCERS_TO_PERSIST = ["_permissions"];
+import Movies from './Movies';
+import loadingSlice from './_loading';
 
 const reducers = {
   _loading: loadingSlice.reducer,
@@ -19,4 +17,3 @@ const rootReducer = (state: any, action: AnyAction) => {
 };
 
 export default rootReducer;
-export type RootState = ReturnType<typeof combinedReducer>;
