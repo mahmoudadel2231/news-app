@@ -6,7 +6,11 @@ import {SingleMovieScreen} from '../screens';
 const Stack = createStackNavigator();
 
 const HomeStack = () => (
-  <Stack.Navigator initialRouteName="Home">
+  <Stack.Navigator
+    initialRouteName="Home"
+    screenOptions={{
+      headerShown: false,
+    }}>
     <Stack.Screen name="Home" component={HomeScreen} />
     <Stack.Screen name="singleMovie" component={SingleMovieScreen} />
   </Stack.Navigator>

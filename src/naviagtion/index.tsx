@@ -1,11 +1,11 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import HomeStack from './homeStack';
+import MyTabs from './bottomTab';
 
 function App() {
   return (
     <NavigationContainer>
-      <HomeStack />
+      <MyTabs />
     </NavigationContainer>
   );
 }
