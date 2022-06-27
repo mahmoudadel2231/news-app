@@ -11,10 +11,8 @@ import {
 } from 'react-native';
 import {rtlSupport} from '../../translations';
 import {Restart} from 'fiction-expo-restart';
-import isEmpty from 'lodash/isEmpty';
 
 import styles from './styles';
-import i18next from 'i18next';
 import useKeyTranslation from '../../translations/useKeyTranslations';
 
 const SettingsScreen = () => {
@@ -28,8 +26,6 @@ const SettingsScreen = () => {
     Restart();
   };
   const translate = useKeyTranslation('common');
-  console.log('translate', translate('Home'));
-
   const [modalVisible, setModalVisible] = useState(false);
   // onChangeLanguage('ar', true);
 
@@ -51,7 +47,7 @@ const SettingsScreen = () => {
                 setModalVisible(!modalVisible);
                 onChangeLanguage('en', true);
               }}>
-              <Text style={styles.textStyle}>ENGLISH</Text>
+              <Text style={styles.textStyle}>{translate('english')}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.modalButtonStyle}
@@ -59,7 +55,7 @@ const SettingsScreen = () => {
                 setModalVisible(!modalVisible);
                 onChangeLanguage('ar', true);
               }}>
-              <Text style={styles.textStyle}>ARABIC</Text>
+              <Text style={styles.textStyle}>{translate('arabic')}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -67,7 +63,7 @@ const SettingsScreen = () => {
       <Pressable
         style={styles.modalOpenStyle}
         onPress={() => setModalVisible(true)}>
-        <Text style={styles.textStyle}>Change Language</Text>
+        <Text style={styles.textStyle}>{translate('change_language')}</Text>
       </Pressable>
     </View>
   );

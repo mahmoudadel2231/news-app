@@ -18,12 +18,15 @@ import {ListEmptyComponent} from '../../components/ListEmptyComponent';
 import {MoviesItem} from '../../components/MoviesItem';
 import Movies from '../../redux/Movies';
 import {useLoadingSelector} from '../../redux/selectors';
+import useKeyTranslation from '../../translations/useKeyTranslations';
 import styles from './styles';
 
 const HomeScreen = () => {
   const dispatch = useDispatch<any>();
   const [page, setPage] = useState(1);
   const [query, setQuey] = useState(undefined);
+
+  const translate = useKeyTranslation('common');
 
   useEffect(() => {
     fetchMovies({refresh: true, query, page});
@@ -64,14 +67,14 @@ const HomeScreen = () => {
           style={styles.textInputStyle}
           onChangeText={setQuey}
           value={query}
-          placeholder="search movies"
+          placeholder={translate('search_placeholder')}
         />
         <TouchableOpacity
           style={styles.searchButton}
           onPress={() => {
             fetchMovies({refresh: true, query, page});
           }}>
-          <Text>search</Text>
+          <Text> {translate('search')}</Text>
         </TouchableOpacity>
       </View>
       <FlatList
@@ -86,9 +89,7 @@ const HomeScreen = () => {
           paddingHorizontal: widthPercentageToDP(5),
         }}
         ListHeaderComponentStyle={{}}
-        ListEmptyComponent={() =>
-          ListEmptyComponent({title: 'No Movies Avaialbe'})
-        }
+        ListEmptyComponent={() => ListEmptyComponent()}
         contentContainerStyle={{paddingBottom: '10%'}}
         indicatorStyle="white"
         refreshing={isLoading}

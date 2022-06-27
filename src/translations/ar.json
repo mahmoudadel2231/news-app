@@ -2,9 +2,17 @@
   "translation": {
     "common": {
       "search": "بحث",
-      "placeholder": "البحث عن فيلم جديد",
+      "search_placeholder": "البحث عن فيلم جديد",
       "Home": "الرئيسيه",
-      "Settings": "الاعدادات"
+      "Settings": "الاعدادات",
+      "empty_movies": "لا يوجد أفلام",
+      "english": "الانحليزيه",
+      "arabic": "العربيه",
+      "change_language": "تغيير اللغه"
+    },
+    "pages": {
+      "home_screen": "الصفحة الرئيسيه",
+      "settings_screen": "صفحة الاعدادات"
     }
   }
 }
